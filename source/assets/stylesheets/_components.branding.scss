@@ -51,6 +51,8 @@
   color: $color-text-strong;
 
   a {
+    text-transform: uppercase;
+    font-size: 3.8rem;
 
     display: block;
     color: $color-link-hover;
