@@ -16,12 +16,12 @@ $ms-base: 1em;
 $ms-ratio: 1.25;
 
 /* Fonts */
-$font-brand-primary:              $helvetica;
-$font-brand-secondary:            $helvetica;
+$font-brand-primary:              $barlow;
+$font-brand-secondary:            $merriweather;
 
 /* Font use case */
-$font-body:                       $font-brand-primary;
-$font-headline:                   $font-brand-secondary;
+$font-body:                       $font-brand-secondary;
+$font-headline:                   $font-brand-primary;
 
 /* Font weights */
 $hairline:                        100;

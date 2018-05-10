@@ -1,6 +1,6 @@
-# WordCamp [Name] [Year]
+# WordCamp Granada 2018
 
-Style guide for the WordCamp [Name] [Year] theme
+Style guide for the WordCamp Granada 2018 theme
 
 ## Style guide
 
@@ -23,8 +23,8 @@ WordCamp header. Read more about [colors](section-1.html#kssref-1-colors) and [f
 
 <header id="masthead" class="site-header" role="banner">
   <div class="site-branding">
-    <p class="site-title"><a href="#" rel="home">WordCamp Name</a></p>
-    <p class="site-description">City, Country – Month, Date, Year.</p>
+    <p class="site-title"><a href="#" rel="home">WordCamp Granada</a></p>
+    <p class="site-description">Granada, ES – 17-18 Noviembre 2018.</p>
   </div><!-- .site-branding -->
   <!-- #site-navigation -->
 </header><!-- #masthead -->
