@@ -47,10 +47,86 @@
     left: -1000px;
     right: -1000px;
 
-    background-color: $color-brand-quaternary;
+    background-color: $light-gray;
 
     content: "";
 
+  }
+
+
+  
+  /* WIDGET PATROCINADORES */
+  &.wcb_widget_sponsors{
+
+    .sponsor-level{
+      display: block;
+
+      .sponsor-level-title{
+        text-transform: uppercase;
+        color: $medium-gray;
+        position: relative;
+        width: 100%;
+
+        &:after,
+        &:before{
+          content: "";
+          width: 45%;
+          height: 2px;
+          position: absolute;
+          background: $light-gray;
+        }
+
+        &:after{
+          top: 0;
+          top: 0;
+          right: 0;
+          margin: auto 0;
+        }
+
+        &:before{
+          top: 0;
+          bottom: 0;
+          left: 0;
+          margin: auto 0;
+        }
+      }
+
+      &.gold{
+
+        .sponsor-logo{
+          display: block;
+          width: 245px;
+        }
+      }
+      
+
+    }
+
+  }
+
+  /* WIDGET SUSCRIPTIONS */
+  &.jetpack_subscription_widget{
+    
+    &:before{
+      background: $color-brand-secondary;
+    }
+
+    .widget-title{
+      color: $white;
+      text-transform: uppercase;
+    }
+
+    #subscribe-text{
+      color: $white;
+    }
+
+    #subscribe-submit{
+
+      input[type="submit"]{
+        color: $white;
+        background: $color-brand-quaternary;
+      }
+    }
   }
 
 }

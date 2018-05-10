@@ -214,6 +214,8 @@
 /* General */
 $white: #FFF;
 $black: #000;
+$light-gray: #F7F6F6;
+$medium-gray: #85797C;
 
 
 /* Brand */
@@ -322,7 +324,7 @@ $color-border-strong:             $color-grey-30;
  * Messages
  */
 
-$color-message-default:           #eeeeee;
+$color-message-default:           #F7F6F6;
 $color-message-success:           #00a664;
 $color-message-warning:           #ffcb05;
 $color-message-danger:            #f04e3e;
