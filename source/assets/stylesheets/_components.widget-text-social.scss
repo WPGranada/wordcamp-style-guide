@@ -90,6 +90,7 @@
       width: rem(40);
       height: rem(40);
       border: 4px solid $color-brand-primary;
+      background: $color-brand-primary;
 
       content :"";
 
@@ -108,6 +109,8 @@
       width: rem(48);
       height: rem(48);
 
+      border: 4px solid $color-brand-primary;
+      background-color: $color-brand-primary;
       background-position: 50% 50%;
       background-repeat: no-repeat;
       background-size: 36px;
