@@ -57,15 +57,19 @@
   
   /* WIDGET PATROCINADORES */
   &.wcb_widget_sponsors{
+    padding: 4rem 0;
 
     .sponsor-level{
-      display: block;
+      display: flex;
+      flex-wrap: wrap;
 
       .sponsor-level-title{
         text-transform: uppercase;
         color: $medium-gray;
         position: relative;
         width: 100%;
+        flex: 0 0 100%;
+        margin: 1rem 0;
 
         &:after,
         &:before{
@@ -92,10 +96,20 @@
       }
 
       &.gold{
+        width: 245px;
+      }
 
-        .sponsor-logo{
-          display: block;
-          width: 245px;
+      &.silver{
+        width: 220px;
+      }
+
+      .sponsor-logo{
+        display: flex;
+        margin: 1rem;
+        padding: 0;
+
+        img{
+          margin: 0;
         }
       }
       
@@ -106,7 +120,7 @@
 
   /* WIDGET SUSCRIPTIONS */
   &.jetpack_subscription_widget{
-    
+
     &:before{
       background: $color-brand-secondary;
     }
