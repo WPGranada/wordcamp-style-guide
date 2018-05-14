@@ -52,118 +52,17 @@
     content: "";
 
   }
-
-
-  
-  /* WIDGET PATROCINADORES */
-  &.wcb_widget_sponsors{
-    padding: 4rem 0;
-
-    .sponsor-level{
-      display: flex;
-      width: 100%;
-      flex-wrap: wrap;
-
-      .sponsor-level-title{
-        text-transform: uppercase;
-        color: $medium-gray;
-        position: relative;
-        width: 100%;
-        flex: 0 0 100%;
-        margin: 1rem 0;
-
-        &:after,
-        &:before{
-          content: "";
-          width: 45%;
-          height: 2px;
-          position: absolute;
-          background: $light-gray;
-        }
-
-        &:after{
-          top: 0;
-          top: 0;
-          right: 0;
-          margin: auto 0;
-        }
-
-        &:before{
-          top: 0;
-          bottom: 0;
-          left: 0;
-          margin: auto 0;
-        }
-      }
-
-      &.gold{
-        .sponsor-logo{
-          width: 245px;
-        }        
-      }
-
-      &.silver{
-        .sponsor-logo{
-          width: 220px;
-        }
-      }
-
-      .sponsor-logo{
-        margin: 1rem;
-        padding: 0;
-
-        img{
-          margin: 0;
-        }
-      }
-      
-
-    }
-
-  }
-
-  /* WIDGET SUSCRIPTIONS */
-  &.jetpack_subscription_widget{
-
-    &:before{
-      background: $color-brand-secondary;
-    }
-
-    .widget-title{
-      color: $white;
-      text-transform: uppercase;
-    }
-
-    #subscribe-text{
-      color: $white;
-    }
-
-    #subscribe-submit{
-
-      input[type="submit"]{
-        color: $white;
-        background: $color-brand-quaternary;
-      }
-    }
-  }
-
 }
-
 
 /*
  * Widget text
  *
  * Default text widget styles
  */
-
-.widget_text {
-
-  background-color: $color-grey-10;
+#secondary .widget_text {
 
   &:before {
-
     background-color: $color-grey-10!important;
-
   }
 
 }

@@ -1,0 +1,76 @@
+// Widget: Sponsors
+//
+// Subscribe jetpack widget
+//
+// Markup: widget-sponsors.html
+//
+// Style guide: 6.widget.sponsors
+#secondary .widget{
+    &.wcb_widget_sponsors{
+    padding: 4rem 0;
+
+    .sponsor-level{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      flex-wrap: wrap;
+
+      .sponsor-level-title{
+        text-transform: uppercase;
+        color: $medium-gray;
+        position: relative;
+        width: 100%;
+        flex: 0 0 100%;
+        margin: 1rem 0;
+
+        &:after,
+        &:before{
+          content: "";
+          width: 42%;
+          height: 2px;
+          position: absolute;
+          background: $light-medium-gray;
+        }
+
+        &:after{
+          top: 0;
+          bottom: 0;
+          right: 0;
+          margin: auto 0;
+        }
+
+        &:before{
+          top: 0;
+          bottom: 0;
+          left: 0;
+          margin: auto 0;
+        }
+      }
+
+      &.gold{
+        .sponsor-logo{
+          width: 245px;
+        }        
+      }
+
+      &.silver{
+        .sponsor-logo{
+          width: 220px;
+        }
+      }
+
+      .sponsor-logo{
+        margin: 1rem;
+        padding: 0;
+
+        img{
+          margin: 0;
+        }
+      }
+      
+
+    }
+
+  }
+}

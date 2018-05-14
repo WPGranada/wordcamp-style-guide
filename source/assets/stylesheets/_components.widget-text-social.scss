@@ -26,6 +26,7 @@
   @include clearfix();
   @include list-reset();
   text-align: center;
+  margin-top: 4rem;
 
   li {
 
@@ -34,6 +35,7 @@
 
     display: block;
     margin-top: $unit-s;
+    margin-bottom: 3rem;
 
     text-align: center;
 
@@ -48,6 +50,7 @@
 
       width: 30%;
       min-width: rem(200);
+      margin-bottom: 3rem;
 
     }
 
@@ -66,7 +69,7 @@
 
     display: block;
     padding: $unit-s $unit-m;
-    padding-top: rem(68);
+    padding-top: 3rem;
 
 
     color: rgba(0,0,0,.8);
@@ -82,7 +85,7 @@
     &:before {
 
       position: absolute;
-      top: 0;
+      top: -1.5rem;
       left: 50%;
       transform: translateX(-50%)  rotate(45deg);
 
@@ -102,9 +105,10 @@
     &:after {
 
       position: absolute;
-      top: 0;
+      top: -1.5rem;
       left: 50%;
       transform: translateX(-50%);
+      transition: all .1s ease;
 
       width: rem(48);
       height: rem(48);
@@ -125,36 +129,69 @@
     &:active {
 
       text-decoration: none;
-      color: $color-text-strong-invert;
-      background-color: $color-brand-primary;
+      //color: $color-text-strong-invert;
+      background-color: rgba(0,0,0,0.2);
 
-      &:before {
+      /*&:before {
 
         background-color: tint($color-brand-primary, 60%);
         border-color: tint($color-brand-primary, 60%);
 
-      }
+      }*/
 
     }
 
   }
 
-  .social-twitter a:after {
+  .social-twitter{
+    a{
+      &:hover,
+      &:focus,
+      &:active{
+        &:after,
+        &:before{
+          background-color: $color-brand-secondary;
+        }
+      }
 
-    background-image: url('https://2017.europe.wordcamp.org/files/2016/11/icon-twitter.png');
-
+      &:after {
+        background-image: url('https://2018.granada.wordcamp.org/files/2018/05/icon-twitter.png');
+      }
+    }
   }
 
-  .social-facebook a:after {
+  .social-facebook{
+    a{
+      &:hover,
+      &:focus,
+      &:active{
+        &:after,
+        &:before{
+          background-color: $color-brand-tertiary;
+        }
+      }
 
-    background-image: url('https://2017.europe.wordcamp.org/files/2016/11/icon-facebook.png');
-
+      &:after {
+        background-image: url('https://2018.granada.wordcamp.org/files/2018/05/icon-facebook.png');
+      }
+    }
   }
 
-  .social-instagram a:after {
+  .social-instagram{
+    a{
+      &:hover,
+      &:focus,
+      &:active{
+        &:after,
+        &:before{
+          background-color: $color-brand-quaternary;
+        }
+      }
 
-    background-image: url('https://2017.europe.wordcamp.org/files/2017/06/icon-instagram.png');
-
+      &:after {
+        background-image: url('https://2018.granada.wordcamp.org/files/2018/05/icon-instagram.png');
+      }
+    }
   }
 
 }
