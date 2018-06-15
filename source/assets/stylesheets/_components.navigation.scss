@@ -30,10 +30,11 @@
   font-weight: $bold;
   text-align: center;
   letter-spacing: .05em;
-  color: $color-link;
+  color: $white;
+  text-transform: uppercase;
 
   border-radius: 0;
-  background-color: rgba($color-brand-tertiary, .9);
+  background-color: $color-brand-secondary;
 
   cursor: pointer;
 
@@ -42,8 +43,8 @@
   &:focus,
   &.focus {
 
-    color: $color-link-hover;
-    background-color: rgba($color-brand-tertiary, .9);
+    color: $white;
+    background-color: shade($color-brand-secondary, 20%);
 
   }
 
@@ -105,7 +106,6 @@
  * Classes switch via JS on viewport width
  */
 
-
 // .menu-main-navigation-container {}
 
 .main-navigation {
@@ -129,9 +129,8 @@
 
   @include breakpoint(to-small) {
 
-    background-color: $color-brand-tertiary;
-
-
+    background-color: $color-brand-secondary;
+    color: $white;
 
     &.toggled-on .menu {
 
@@ -158,7 +157,7 @@
 
   @include breakpoint(to-small) {
 
-    border-top: 1px solid rgba(255,255,255,.2);
+    border-top: 1px solid rgba(255, 255, 255, .2);
 
     display: none;
 
@@ -190,7 +189,7 @@
     display: inline-block;
 
     @include font-size(18);
-    line-height: em(24,18);
+    line-height: em(24, 18);
     text-align: center;
 
   }
@@ -213,7 +212,7 @@
   &.focus {
 
     color: $white;
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0, 0, 0, 0.2);
 
   }
 
@@ -366,7 +365,7 @@
 
       width: 100%;
       margin: 0;
-      border-top: 1px solid rgba(255,255,255,.2);
+      border-top: 1px solid rgba(255, 255, 255, .2);
 
       text-align: left;
 
