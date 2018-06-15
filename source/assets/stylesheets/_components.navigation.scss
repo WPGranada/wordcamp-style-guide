@@ -80,7 +80,7 @@
 
   &[aria-expanded="true"] {
 
-    color: $color-link;
+    color: $white;
 
     &:after {
 
@@ -243,7 +243,11 @@
 
 .menu-item-has-children {
 
-  background-color: rgba($color-brand-tertiary, .6);
+  background-color: tint($color-brand-secondary, 40%);
+
+  > a {
+    background-color: $color-brand-secondary;
+  }
 
   .dropdown-toggle {
 
