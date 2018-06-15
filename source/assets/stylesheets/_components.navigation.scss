@@ -183,15 +183,6 @@
   font-weight: $regular;
   text-align: left;
 
-  @include breakpoint(medium) {
-    > a {
-      &:before {
-        content: "\A";
-        white-space: pre;
-      }
-    }
-  }
-
   @include breakpoint(small) {
 
     margin: 0 rem(1);
@@ -252,6 +243,12 @@
 
 .menu-item-has-children {
 
+  background-color: tint($color-brand-secondary, 40%);
+
+  > a {
+    background-color: $color-brand-secondary;
+  }
+
   .dropdown-toggle {
 
     display: none;
@@ -260,11 +257,9 @@
 
   @include breakpoint(small) {
 
-    background-color: tint($color-brand-secondary, 5%);
+    background-color: transparent;
 
     > a {
-
-      background-color: $color-brand-secondary;
 
       &:after {
 
