@@ -1,0 +1,98 @@
+/* =Realistic Tickets
+===================================================== */
+
+// Widget: Realistic Tickets
+//
+// 
+//
+// Markup: widget-realistic-tickets.html
+//
+// Style guide: 6.widget.realistic-tickets
+#secondary .widget_text .realistic-ticket {
+    display: inline-block;
+    min-width: 280px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+    background: #FFF;
+}
+
+@media (min-width: 48em){
+    #secondary .widget_text .realistic-ticket {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin-top: -20px;
+    }
+}
+
+@media (min-width: 48em){
+    #secondary .widget_text .realistic-ticket {
+        -webkit-transform: rotate(-15deg);
+        transform: rotate(-15deg);
+    }
+}
+
+
+@media (min-width: 48em){
+    .realistic-ticket:focus, .realistic-ticket:hover {
+        -webkit-transform: scale(1.1) rotate(-16deg);
+        transform: scale(1.1) rotate(-16deg);
+    }
+}
+
+
+.realistic-ticket .realistic-ticket__info-action, 
+.realistic-ticket .realistic-ticket__info-event, 
+.realistic-ticket .realistic-ticket__info-label {
+    padding: 15px;
+    transition: all .15s ease;
+}
+
+.realistic-ticket:focus .realistic-ticket__info-action, 
+.realistic-ticket:focus .realistic-ticket__info-label, 
+.realistic-ticket:hover .realistic-ticket__info-action, 
+.realistic-ticket:hover .realistic-ticket__info-label {
+    color: #efdc39;
+}
+
+.realistic-ticket .realistic-ticket__info-action, 
+.realistic-ticket .realistic-ticket__info-label {
+    position: absolute;
+    left: 0;
+    right: 0;
+    color: hsla(0,0%,100%,.9);
+}
+
+.realistic-ticket .realistic-ticket__info-action, 
+.realistic-ticket .realistic-ticket__info-label {
+    position: absolute;
+    left: 0;
+    right: 0;
+    color: hsla(0,0%,100%,.9);
+}
+
+.realistic-ticket .realistic-ticket__part-right {
+    width: 100px;
+    margin-left: -2px;
+    background-position: 100% 0;
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+}
+
+.realistic-ticket .realistic-ticket__part-left, 
+.realistic-ticket .realistic-ticket__part-right {
+    position: relative;
+    float: left;
+    padding: 10px;
+    height: 140px;
+    //background-image: url(https://2018.europe.wordcamp.org/files/2017/11/futuristic-ticket.png);
+    background-repeat: no-repeat;
+    background-size: 460px 140px;
+    transition: all .15s ease;
+}
