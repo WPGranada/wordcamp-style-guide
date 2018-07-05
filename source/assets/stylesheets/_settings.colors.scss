@@ -211,13 +211,20 @@
 
 }
 
+/* General */
+$white: #FFF;
+$black: #000;
+$light-gray: #F7F6F6;
+$light-medium-gray: rgba(48, 26, 31, 0.12);
+$medium-gray: #85797C;
+
 
 /* Brand */
 
 $color-brand-primary:             #401826;
-$color-brand-secondary:           #DF7127;
+$color-brand-secondary:           #244b7d;
 $color-brand-tertiary:            #961B1E;
-$color-brand-quaternary:          #116333;
+$color-brand-quaternary:          #DF7127;
 
 @include cc($color-brand-primary, 'color-brand-primary');
 @include cc($color-brand-secondary, 'color-brand-secondary');
@@ -249,7 +256,7 @@ $color-text-strong-invert:        rgba(255,255,255,.9);
  */
 
 $color-link:                 $color-brand-primary;
-$color-link-hover:           shade($color-link, 10%);
+$color-link-hover:           $color-brand-quaternary; //shade($color-link, 10%);
 $color-link-focus:           shade($color-link, 20%);
 $color-link-visited:         tint($color-link, 20%);
 
@@ -318,7 +325,7 @@ $color-border-strong:             $color-grey-30;
  * Messages
  */
 
-$color-message-default:           #eeeeee;
+$color-message-default:           #F7F6F6;
 $color-message-success:           #00a664;
 $color-message-warning:           #ffcb05;
 $color-message-danger:            #f04e3e;

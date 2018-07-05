@@ -47,29 +47,22 @@
     left: -1000px;
     right: -1000px;
 
-    background-color: $color-brand-quaternary;
+    background-color: $light-gray;
 
     content: "";
 
   }
-
 }
-
 
 /*
  * Widget text
  *
  * Default text widget styles
  */
-
-.widget_text {
-
-  background-color: $color-grey-10;
+#secondary .widget_text {
 
   &:before {
-
     background-color: $color-grey-10!important;
-
   }
 
 }

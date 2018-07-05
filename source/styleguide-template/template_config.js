@@ -29,10 +29,10 @@ try {
 // See https://github.com/bcoe/yargs/blob/master/README.md#optionskey-opt
 kssHandlebarsTemplate.options = {
   'title': {
-    group: 'Style guide:',
+    group: 'Guía de estilos:',
     string: true,
     multiple: false,
-    describe: 'Title of the style guide',
+    describe: 'WordCamp Granada 2018',
     default: 'KSS Style Guide'
   }
 };

@@ -1,0 +1,30 @@
+/* =Language block
+===================================================== */
+
+// Language block
+//
+// Block for no default site language.
+
+.language {
+
+  color: lighten( #000, 60% );
+
+  font-family: $barlow;
+  font-style: italic;
+  font-weight: 100;
+
+  border-left: 3px solid lighten( #000, 90% );
+
+  padding-left: 10px;
+
+  * {
+
+    color: lighten( #000, 60% );
+
+    font-family: $barlow;
+    font-style: italic;
+    font-weight: 100;
+
+  }
+
+}

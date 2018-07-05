@@ -30,10 +30,11 @@
   font-weight: $bold;
   text-align: center;
   letter-spacing: .05em;
-  color: $color-link;
+  color: $white;
+  text-transform: uppercase;
 
   border-radius: 0;
-  background-color: rgba($color-brand-tertiary, .9);
+  background-color: $color-brand-secondary;
 
   cursor: pointer;
 
@@ -42,8 +43,8 @@
   &:focus,
   &.focus {
 
-    color: $color-link-hover;
-    background-color: rgba($color-brand-tertiary, .9);
+    color: $white;
+    background-color: shade($color-brand-secondary, 20%);
 
   }
 
@@ -71,7 +72,7 @@
 
     vertical-align: middle;
 
-    border-top-color: $color-link;
+    border-top-color: $white;
 
     content: "";
 
@@ -79,12 +80,12 @@
 
   &[aria-expanded="true"] {
 
-    color: $color-link;
+    color: $white;
 
     &:after {
 
       border-top-color: transparent;
-      border-bottom-color: $color-link;
+      border-bottom-color: $white;
 
     }
 
@@ -105,16 +106,16 @@
  * Classes switch via JS on viewport width
  */
 
-
 // .menu-main-navigation-container {}
 
 .main-navigation {
 
   position: relative;
+  background: $color-brand-secondary;
 
   &:before {
 
-    position: absolute;
+    /*position: absolute;
     top: 0;
     left: 0;
     right: 0;
@@ -122,15 +123,14 @@
     height: rem(2);
     background-color: $color-link;
 
-    content: "";
+    content: "";*/
 
   }
 
   @include breakpoint(to-small) {
 
-    background-color: $color-brand-tertiary;
-
-
+    background-color: $color-brand-secondary;
+    color: $white;
 
     &.toggled-on .menu {
 
@@ -157,7 +157,7 @@
 
   @include breakpoint(to-small) {
 
-    border-top: 1px solid rgba(255,255,255,.2);
+    border-top: 1px solid rgba(255, 255, 255, .2);
 
     display: none;
 
@@ -180,7 +180,7 @@
 
   font-family: $font-headline;
   font-size: ms(0);
-  font-weight: $bold;
+  font-weight: $regular;
   text-align: left;
 
   @include breakpoint(small) {
@@ -189,7 +189,7 @@
     display: inline-block;
 
     @include font-size(18);
-    line-height: em(24,18);
+    line-height: em(24, 18);
     text-align: center;
 
   }
@@ -199,10 +199,11 @@
 .menu-item a {
 
   display: block;
-  color: $color-link;
+  color: $white;
   padding: $unit-xs $unit-s;
 
   text-decoration: none;
+  text-transform: uppercase;
   transition: all .1s ease;
 
   &:hover,
@@ -210,8 +211,8 @@
   &:focus,
   &.focus {
 
-    color: $color-text-strong;
-    background-color: $color-link-hover;
+    color: $white;
+    background-color: rgba(0, 0, 0, 0.2);
 
   }
 
@@ -231,8 +232,8 @@
 
 .current-menu-item > a {
 
-  color: $color-text-strong;
-  background-color: $color-link;
+  color: $white;
+  background-color: $color-brand-quaternary;
 
 }
 
@@ -242,7 +243,11 @@
 
 .menu-item-has-children {
 
-  background-color: rgba($color-brand-tertiary, .6);
+  background-color: tint($color-brand-secondary, 5%);
+
+  > a {
+    background-color: $color-brand-secondary;
+  }
 
   .dropdown-toggle {
 
@@ -259,15 +264,15 @@
       &:after {
 
         position: relative;
-        top: -(rem(2));
+        top: -(rem(1));
 
         display: inline-block;
-        border: rem(6) solid transparent;
-        margin-left: $unit-xs;
+        border: rem(4) solid transparent;
+        margin-left: $unit-s;
 
         vertical-align: middle;
 
-        border-top-color: $color-link;
+        border-top-color: $white;
 
         content: "";
 
@@ -286,12 +291,12 @@
     &:hover > a,
     &.focus > a {
 
-      color: $color-text-strong;
-      background-color: $color-link;
+      //color: $color-text-strong;
+      //background-color: $color-link;
 
       &:after {
 
-        border-top-color: $color-text-strong;
+        border-top-color: $white;
 
       }
 
@@ -306,7 +311,7 @@
 
     &.current-menu-item > a:after {
 
-      border-top-color: $color-text-strong;
+      border-top-color: $white;
 
     }
 
@@ -322,7 +327,7 @@
 
     text-transform: none;
     font-weight: $regular;
-    font-family: $font-body;
+    font-family: $font-headline;
 
   }
 
@@ -358,13 +363,13 @@
 
     min-width: rem(260);
 
-    background-color: $color-link;
+    background-color: $color-brand-secondary;
 
     .menu-item {
 
       width: 100%;
       margin: 0;
-      border-top: 1px solid rgba(255,255,255,.2);
+      border-top: 1px solid rgba(255, 255, 255, .2);
 
       text-align: left;
 
@@ -374,7 +379,7 @@
 
       padding: rem(10) $unit-s;
 
-      color: $color-text;
+      color: $white;
 
     }
 

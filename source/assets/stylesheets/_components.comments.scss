@@ -34,12 +34,23 @@
 
     margin-top: $unit-m;
 
+    .children {
+
+      > .comment {
+
+        list-style-type: none;
+        margin-top: $unit-s;
+
+      }
+
+    }
+
   }
 
-  .post {}
+  .post {
+  }
 
 }
-
 
 /*
  * Single comment
@@ -125,7 +136,6 @@ article.comment-body {
 
 }
 
-
 /*
  * Other
  */
@@ -148,6 +158,8 @@ article.comment-body {
 
   border: 1px solid $color-border-normal;
   border-radius: $border-radius-small;
+
+  margin-bottom: $unit-l;
 
 }
 
