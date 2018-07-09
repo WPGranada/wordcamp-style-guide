@@ -10,7 +10,7 @@
 // Style guide: 6.languages
 .language {
 
-  color: lighten( #000, 65% );
+  color: rgba(64,24,38,.8);
 
   font-family: $merriweather;
   font-style: italic;
@@ -29,6 +29,7 @@
   }
 
   .language-name{
+    color: inherit;
     text-transform: uppercase;
     margin: 25px 0;
     font-size: 0.9em;
