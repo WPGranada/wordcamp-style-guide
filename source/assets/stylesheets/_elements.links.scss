@@ -48,3 +48,15 @@ a {
   // }
 
 }
+
+
+.entry-meta, 
+.entry-content{
+  a{
+    text-decoration: underline;
+  }
+}
+
+#masthead .site-title a{ 
+  color: $color-text !important; 
+}

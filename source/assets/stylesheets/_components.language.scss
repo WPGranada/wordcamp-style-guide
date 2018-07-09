@@ -4,27 +4,35 @@
 // Language block
 //
 // Block for no default site language.
-
+//
+// Markup: languages.html
+//
+// Style guide: 6.languages
 .language {
 
-  color: lighten( #000, 60% );
+  color: rgba(64,24,38,.8);
 
-  font-family: $barlow;
+  font-family: $merriweather;
   font-style: italic;
   font-weight: 100;
 
-  border-left: 3px solid lighten( #000, 90% );
+  border-left: 2px solid lighten( #000, 85% );
 
+  margin: 40px 0;
   padding-left: 10px;
 
   * {
-
-    color: lighten( #000, 60% );
-
-    font-family: $barlow;
-    font-style: italic;
-    font-weight: 100;
-
+    color: inherit;
+    font-family: inherit;
+    font-style: inherit;
+    font-weight: inherit;
   }
 
+  .language-name{
+    color: inherit;
+    text-transform: uppercase;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: inherit;
+  }
 }

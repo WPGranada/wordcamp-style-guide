@@ -8,73 +8,77 @@
 // Markup: widget-realistic-tickets.html
 //
 // Style guide: 6.widget.realistic-tickets
-#secondary .widget_text .realistic-ticket {
+#custom_html-3:before {
+    background-color: #eae9e6;
+    background-size: 120px;
+    background-attachment: fixed;
+    background-position: 50% 0
+}
+
+#custom_html-3 .widget-title, #custom_html-3 p {
+    text-align: left
+}
+
+@media (min-width:48em) {
+    #custom_html-3 {
+        position: relative
+    }
+
+    #custom_html-3 .widget-title {
+        text-align: left
+    }
+
+    #custom_html-3 p {
+        margin-bottom: 0;
+        margin-right: 20rem;
+        text-align: left
+    }
+
+    #custom_html-3 .realistic-ticket {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin-top: -20px
+    }
+}
+
+.realistic-ticket {
     display: inline-block;
     min-width: 280px;
     margin: 0 auto;
     font-size: 16px;
     line-height: 20px;
+    font-family: Josefin Sans, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
     -webkit-transform: rotate(-5deg);
-    transform: rotate(-5deg);
-    background: #FFF;
+    transform: rotate(-5deg)
 }
 
-@media (min-width: 48em){
-    #secondary .widget_text .realistic-ticket {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        margin-top: -20px;
-    }
-}
-
-@media (min-width: 48em){
-    #secondary .widget_text .realistic-ticket {
+@media (min-width:48em) {
+    .realistic-ticket {
         -webkit-transform: rotate(-15deg);
-        transform: rotate(-15deg);
+        transform: rotate(-15deg)
     }
 }
 
-
-@media (min-width: 48em){
-    .realistic-ticket:focus, .realistic-ticket:hover {
-        -webkit-transform: scale(1.1) rotate(-16deg);
-        transform: scale(1.1) rotate(-16deg);
-    }
+.realistic-ticket .realistic-ticket__part-left, .realistic-ticket .realistic-ticket__part-right {
+    position: relative;
+    float: left;
+    padding: 10px;
+    height: 140px;
+    background-image: url(https://2018.europe.wordcamp.org/files/2017/11/futuristic-ticket.png);
+    background-repeat: no-repeat;
+    background-size: 460px 140px;
+    transition: all .15s ease
 }
 
-
-.realistic-ticket .realistic-ticket__info-action, 
-.realistic-ticket .realistic-ticket__info-event, 
-.realistic-ticket .realistic-ticket__info-label {
-    padding: 15px;
-    transition: all .15s ease;
-}
-
-.realistic-ticket:focus .realistic-ticket__info-action, 
-.realistic-ticket:focus .realistic-ticket__info-label, 
-.realistic-ticket:hover .realistic-ticket__info-action, 
-.realistic-ticket:hover .realistic-ticket__info-label {
-    color: #efdc39;
-}
-
-.realistic-ticket .realistic-ticket__info-action, 
-.realistic-ticket .realistic-ticket__info-label {
-    position: absolute;
-    left: 0;
-    right: 0;
-    color: hsla(0,0%,100%,.9);
-}
-
-.realistic-ticket .realistic-ticket__info-action, 
-.realistic-ticket .realistic-ticket__info-label {
-    position: absolute;
-    left: 0;
-    right: 0;
-    color: hsla(0,0%,100%,.9);
+.realistic-ticket .realistic-ticket__part-left {
+    width: 180px;
+    background-position: 0 0;
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%
 }
 
 .realistic-ticket .realistic-ticket__part-right {
@@ -82,17 +86,63 @@
     margin-left: -2px;
     background-position: 100% 0;
     -webkit-transform-origin: 0 100%;
-    transform-origin: 0 100%;
+    transform-origin: 0 100%
 }
 
-.realistic-ticket .realistic-ticket__part-left, 
-.realistic-ticket .realistic-ticket__part-right {
-    position: relative;
-    float: left;
-    padding: 10px;
-    height: 140px;
-    //background-image: url(https://2018.europe.wordcamp.org/files/2017/11/futuristic-ticket.png);
-    background-repeat: no-repeat;
-    background-size: 460px 140px;
-    transition: all .15s ease;
+.realistic-ticket .realistic-ticket__info-action, .realistic-ticket .realistic-ticket__info-event,
+.realistic-ticket .realistic-ticket__info-label {
+    padding: 15px;
+    transition: all .15s ease
+}
+
+.realistic-ticket .realistic-ticket__info-label {
+    top: 0;
+    bottom: 50%
+}
+
+.realistic-ticket .realistic-ticket__info-action, .realistic-ticket .realistic-ticket__info-label {
+    position: absolute;
+    left: 0;
+    right: 0;
+    font-family: Source Sans Pro, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    color: hsla(0, 0%, 100%, .9)
+}
+
+.realistic-ticket .realistic-ticket__info-action {
+    top: 50%;
+    bottom: 0
+}
+
+.realistic-ticket .realistic-ticket__info-event {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 140px;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    color: rgba(0, 0, 0, .9)
+}
+
+@media (min-width:48em) {
+    .realistic-ticket:focus, .realistic-ticket:hover {
+        -webkit-transform: scale(1.1) rotate(-16deg);
+        transform: scale(1.1) rotate(-16deg)
+    }
+}
+
+.realistic-ticket:focus .realistic-ticket__part-left, .realistic-ticket:hover .realistic-ticket__part-left {
+    -webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg)
+}
+
+.realistic-ticket:focus .realistic-ticket__part-right, .realistic-ticket:hover .realistic-ticket__part-right {
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg)
+}
+
+.realistic-ticket:focus .realistic-ticket__info-action, .realistic-ticket:focus .realistic-ticket__info-label,
+.realistic-ticket:hover .realistic-ticket__info-action, .realistic-ticket:hover .realistic-ticket__info-label {
+    color: #efdc39
 }

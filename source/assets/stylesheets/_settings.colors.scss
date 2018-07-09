@@ -256,7 +256,7 @@ $color-text-strong-invert:        rgba(255,255,255,.9);
  */
 
 $color-link:                 $color-brand-primary;
-$color-link-hover:           shade($color-link, 10%);
+$color-link-hover:           $color-brand-quaternary; //shade($color-link, 10%);
 $color-link-focus:           shade($color-link, 20%);
 $color-link-visited:         tint($color-link, 20%);
 
@@ -380,11 +380,11 @@ $color-button-inactive:           #eeeeee;
  * Helper colors
  */
 
-$color-text-heading-1:            $color-brand-tertiary;
-$color-text-heading-2:            $color-text-strong;
-$color-text-heading-3:            $color-text-strong;
-$color-text-heading-4:            $color-text-strong;
-$color-text-paragraph:            $color-text;
+$color-text-heading-1:            $color-brand-primary; //$color-brand-tertiary;
+$color-text-heading-3:            $color-brand-primary; //$color-text-strong;
+$color-text-heading-2:            $color-brand-primary; //$color-text-strong;
+$color-text-heading-4:            $color-brand-primary; //$color-text-strong;
+$color-text-paragraph:            $color-brand-primary;
 
 
 /*
