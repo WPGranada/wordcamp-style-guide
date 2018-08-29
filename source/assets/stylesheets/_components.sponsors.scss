@@ -82,13 +82,6 @@
 
   }
 
-  h3,
-  .wcorg-sponsor-description p {
-
-    display: none;
-
-  }
-
   a {
 
     background-color: #fff;
@@ -103,7 +96,7 @@
     &:focus img,
     &:active img {
 
-      filter:  grayscale(100%);
+      filter: grayscale(100%);
       // filter:  sepia(100%);
       opacity: .75;
 
@@ -219,6 +212,6 @@
 .wcorg-sponsor-level-community-summit-silver,
 .wcorg-sponsor-level-community-summit-bronze {
 
-  display: none!important;
+  display: none !important;
 
 }
