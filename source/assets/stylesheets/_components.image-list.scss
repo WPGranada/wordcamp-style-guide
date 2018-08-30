@@ -1,0 +1,73 @@
+/* =Image list
+===================================================== */
+
+// Image list
+//
+// Listado con imágenes de fondo para la sección Información Práctica
+//
+// Markup: image-list.html
+//
+// Style guide: 6.image-list
+
+ul.image-list{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    list-style: none;
+    grid-auto-rows: 1fr;
+
+    > li{
+        display: flex;
+        margin: 1rem;
+        background: #000 url(https://www.alhambra.org/img/banner-index2.jpg) center no-repeat;
+        background-size:  auto 100%;
+        transition: all 0.5s;
+        align-items: center;
+        position: relative;
+
+        &:after{
+            content: " ";
+            display: block;
+            padding-top: 100%;
+        }
+
+        a{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            min-height: 200px;
+            padding: 2rem;
+            color: $white;
+            font-family: $font-brand-primary;
+            font-weight: bold;
+            text-transform: uppercase;
+            background: rgba(0,0,0,0.2);
+            transition: all 0.5s;
+        }
+
+        &:hover{
+            background-size: auto 150%;
+
+            a{
+                text-decoration: none;
+                background: rgba(0,0,0,0.4);
+                color: $white;
+            }
+        }
+
+        &.ubicacion{
+            background-image: url(https://2018.granada.wordcamp.org/files/2018/05/IMG_3413_2000x1333-768x512.jpg);
+        }
+
+        &.programa{
+            background-image: url(https://2018.granada.wordcamp.org/files/2018/04/wcgranada_alhambra.jpg);
+        }
+
+        &.codigo-conducta{
+            background-image: url(https://2018.granada.wordcamp.org/files/2018/05/banner_section_empresa.jpg);
+        }
+    }
+}
